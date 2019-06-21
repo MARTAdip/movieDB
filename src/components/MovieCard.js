@@ -11,6 +11,7 @@ import Typography from '@material-ui/core/Typography';
 const jssStyles = theme => ({
   root: {
     flexGrow: 1,
+    marginTop: 20,
   },
   control: {
     padding: theme.spacing(2),

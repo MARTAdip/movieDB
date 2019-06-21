@@ -48,13 +48,13 @@ class MovieCard extends Component{
 
                 <CardContent>
                   <Typography>
-                    {this.props.movies.title}
+                    {this.props.title}
                   </Typography>
                   <div>
-                    YEAR
+                    Year {this.props.year}
                   </div>
                   <div>
-                    RATING
+                    Rating {this.props.rating}
                   </div>
                 </CardContent>
                 </Card>

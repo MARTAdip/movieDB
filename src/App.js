@@ -4,6 +4,7 @@ import Header from './components/Header';
 import YearRangeSlider from './components/YearRangeSlider';
 import RatingRangeSlider from './components/RatingRangeSlider';
 import RuntimeRangeSlider from './components/RuntimeRangeSlider';
+import SearchButton from './components/SearchButton';
 import { Col } from 'react-bootstrap';
 
 class App extends Component {
@@ -19,6 +20,7 @@ class App extends Component {
         <YearRangeSlider className="rangeSlider"/>
         <RatingRangeSlider />
         <RuntimeRangeSlider />
+        <SearchButton />
       <div className="gridElement">
 
       <MoviesList className="movieContainer" />

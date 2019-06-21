@@ -17,18 +17,20 @@ class MoviesList extends Component {
   }
 
   render(){
-  const { movies } = this.state;
+    const {title, movies } = this.props;
     console.log(this.state, 'state');
 
     return(
       <Fragment>
 
-          {movies.map(movie => <MovieCard
+          {this.state.movies.map(movie => <MovieCard
             key={movie.id}
-            title={movies.title}
+            title={movie.title}
             movies={movies}
+            year={movie.release_date}
+            rating={movie.vote_average}
             />)}
-          {/* {movies.map(movie => <h1>{movies.title}</h1>)} */}
+           {/* {this.state.movies.map(movie => <h1>{movie.title}</h1>)} */}
           movies
 
       </Fragment>

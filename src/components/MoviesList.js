@@ -1,9 +1,8 @@
 import React, {Component, Fragment} from 'react';
 import MovieCard from './MovieCard'
 import { API_KEY } from '../utils/api';
-import Grid from '@material-ui/core/Grid';
 import axios from 'axios';
-
+import { Container , Row } from 'react-bootstrap';
 class MoviesList extends Component {
 
   state={
@@ -23,17 +22,15 @@ class MoviesList extends Component {
 
     return(
       <Fragment>
-        <Grid container  spacing={2}>
-        <Grid item xs={12}>
+
           {movies.map(movie => <MovieCard
             key={movie.id}
-
+            title={movies.title}
             movies={movies}
             />)}
           {/* {movies.map(movie => <h1>{movies.title}</h1>)} */}
           movies
-        </Grid>
-      </Grid>
+
       </Fragment>
     );
   }
